@@ -24,7 +24,7 @@ class RoadmapSerializer(serializers.ModelSerializer):
 
 
 class ProjectSerializer(serializers.ModelSerializer):
-    roadmap = RoadmapSerializer(required=False)
+    roadmap = RoadmapSerializer(required=True)
     owner = UserSerializer(required=True)
 
     class Meta:
